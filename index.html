@@ -296,7 +296,7 @@
 					<h2>contact us</h2>
 					<div class="row">
 					<div class="col-md-8 offset-md-2">
-						<p>We are looking for new intersting projects.</p>
+						<p class="title_p">We are looking for new intersting projects.</p>
 					</div>
 					</div>
 					<div class="row" id="row4">
@@ -356,6 +356,9 @@
 			 		$(window).on('scroll', function() {
 			 			if($(window).scrollTop() > $('.crew_card').offset().top-$(window).height())
 			   				$('.crew_card').addClass('animated fadeInUp');
+			   				// setTimeout(function() {
+       			// 				$('.crew_card').removeClass("animated fadeInUp");
+   							// }, 400);
 			  			if($(window).scrollTop() > $('#row1').offset().top-$(window).height())
 			   				$('#row1').addClass('animated fadeInUp');
 						if($(window).scrollTop() > $('#row2').offset().top-$(window).height())
